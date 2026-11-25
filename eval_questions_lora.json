@@ -1,0 +1,313 @@
+[
+ {
+  "q": "What does LoRA freeze and what does it train instead?",
+  "answerable": true,
+  "page": 1,
+  "keywords": [
+   "freez",
+   "rank"
+  ]
+ },
+ {
+  "q": "By how much does LoRA reduce the number of trainable parameters?",
+  "answerable": true,
+  "page": 1,
+  "keywords": [
+   "10,000"
+  ]
+ },
+ {
+  "q": "How much does LoRA reduce GPU memory usage?",
+  "answerable": true,
+  "page": 1,
+  "keywords": [
+   [
+    "three",
+    "3x",
+    "3 times",
+    "threefold"
+   ]
+  ]
+ },
+ {
+  "q": "What hypothesis inspired the LoRA approach?",
+  "answerable": true,
+  "page": 2,
+  "keywords": [
+   [
+    "intrinsic rank",
+    "low rank",
+    "low-rank"
+   ]
+  ]
+ },
+ {
+  "q": "Why can LoRA matrices be merged into the pre-trained weights at deployment?",
+  "answerable": true,
+  "page": [
+   2,
+   6
+  ],
+  "keywords": [
+   [
+    "merg",
+    "w0 + ba",
+    "w = w0"
+   ]
+  ]
+ },
+ {
+  "q": "Which projection matrices does the self-attention module contain?",
+  "answerable": true,
+  "page": [
+   2,
+   6
+  ],
+  "keywords": [
+   "wq",
+   "wk",
+   "wv",
+   "wo"
+  ]
+ },
+ {
+  "q": "What is the size of the full fine-tuning update compared with the original model?",
+  "answerable": true,
+  "page": 3,
+  "keywords": [
+   [
+    "equal",
+    "same size",
+    "same as"
+   ]
+  ]
+ },
+ {
+  "q": "What fraction of the original parameters can LoRA reduce trainable parameters to for GPT-3?",
+  "answerable": true,
+  "page": 3,
+  "keywords": [
+   "0.01"
+  ]
+ },
+ {
+  "q": "Why do adapter layers increase inference latency?",
+  "answerable": true,
+  "page": 4,
+  "keywords": [
+   "sequential"
+  ]
+ },
+ {
+  "q": "What problems does prefix tuning have?",
+  "answerable": true,
+  "page": 4,
+  "keywords": [
+   "optimiz",
+   "sequence length"
+  ]
+ },
+ {
+  "q": "How much extra latency does AdapterH add at batch size 1?",
+  "answerable": true,
+  "page": 5,
+  "keywords": [
+   "30.3"
+  ]
+ },
+ {
+  "q": "How are matrices A and B initialised in LoRA?",
+  "answerable": true,
+  "page": 5,
+  "keywords": [
+   "gaussian",
+   "zero"
+  ]
+ },
+ {
+  "q": "What is the scaling factor applied to the weight update and why?",
+  "answerable": true,
+  "page": [
+   5,
+   6
+  ],
+  "keywords": [
+   [
+    "α",
+    "alpha",
+    "scal"
+   ]
+  ]
+ },
+ {
+  "q": "How much does VRAM usage drop for GPT-3 175B during training?",
+  "answerable": true,
+  "page": 6,
+  "keywords": [
+   "1.2 tb",
+   "350 gb"
+  ]
+ },
+ {
+  "q": "How much does the checkpoint size shrink when r equals 4 on query and value matrices?",
+  "answerable": true,
+  "page": [
+   6,
+   7
+  ],
+  "keywords": [
+   "35 mb"
+  ]
+ },
+ {
+  "q": "What training speedup does LoRA give over full fine-tuning?",
+  "answerable": true,
+  "page": 7,
+  "keywords": [
+   "25%"
+  ]
+ },
+ {
+  "q": "What is a limitation of LoRA when handling several tasks in one forward pass?",
+  "answerable": true,
+  "page": 7,
+  "keywords": [
+   [
+    "batch",
+    "multiple tasks",
+    "single forward pass",
+    "absorb"
+   ]
+  ]
+ },
+ {
+  "q": "Which benchmark was used to evaluate RoBERTa and DeBERTa?",
+  "answerable": true,
+  "page": 7,
+  "keywords": [
+   "glue"
+  ]
+ },
+ {
+  "q": "What does the BitFit baseline update?",
+  "answerable": true,
+  "page": 7,
+  "keywords": [
+   "bias"
+  ]
+ },
+ {
+  "q": "What is the formula for the number of trainable parameters in LoRA?",
+  "answerable": true,
+  "page": 8,
+  "keywords": [
+   [
+    "lora"
+   ],
+   [
+    "dmodel",
+    "d_model",
+    "d model"
+   ]
+  ]
+ },
+ {
+  "q": "How many trainable parameters does GPT-2 Medium use with LoRA?",
+  "answerable": true,
+  "page": 8,
+  "keywords": [
+   "0.35"
+  ]
+ },
+ {
+  "q": "On which GPT-3 tasks does LoRA match or beat full fine-tuning?",
+  "answerable": true,
+  "page": 8,
+  "keywords": [
+   "wikisql",
+   "multinli",
+   "samsum"
+  ]
+ },
+ {
+  "q": "How does COMPACTER parametrize adapters?",
+  "answerable": true,
+  "page": 9,
+  "keywords": [
+   "kronecker"
+  ]
+ },
+ {
+  "q": "Which combination of attention weights gave the best accuracy?",
+  "answerable": true,
+  "page": 11,
+  "keywords": [
+   "wq",
+   "wv"
+  ]
+ },
+ {
+  "q": "Does LoRA work well at rank 1?",
+  "answerable": true,
+  "page": 11,
+  "keywords": [
+   [
+    "r = 1",
+    "rank 1",
+    "well"
+   ]
+  ]
+ },
+ {
+  "q": "What future work does the paper suggest?",
+  "answerable": true,
+  "page": 11,
+  "keywords": [
+   [
+    "combin",
+    "select",
+    "rank"
+   ]
+  ]
+ },
+ {
+  "q": "What is QLoRA and how does it quantize the model?",
+  "answerable": false
+ },
+ {
+  "q": "What learning rate and batch size were used for GPT-3 training?",
+  "answerable": false
+ },
+ {
+  "q": "Who are the authors of this paper?",
+  "answerable": false
+ },
+ {
+  "q": "Does LoRA work for image diffusion models like Stable Diffusion?",
+  "answerable": false
+ },
+ {
+  "q": "How does LoRA compare with DoRA?",
+  "answerable": false
+ },
+ {
+  "q": "What does it cost in dollars to train LoRA on an A100 GPU?",
+  "answerable": false
+ },
+ {
+  "q": "How many parameters does GPT-4 have?",
+  "answerable": false
+ },
+ {
+  "q": "Show the Hugging Face PEFT code to apply LoRA.",
+  "answerable": false
+ },
+ {
+  "q": "Explain how a GAN generator and discriminator work.",
+  "answerable": false
+ },
+ {
+  "q": "What is the capital of France?",
+  "answerable": false
+ }
+]
